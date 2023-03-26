@@ -109,7 +109,9 @@ body{
 
 .crew-img{
     height: 356px;
-    padding-inline: 25%;
+}
+.crew{
+    text-align: center;
 }
 
 .dots{
