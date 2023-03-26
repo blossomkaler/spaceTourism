@@ -10,7 +10,6 @@ body{
     padding-inline: min(10rem, 10vw);
     position: absolute;
     bottom: 0;
-    height: 65vh;
 }
 
 .main-heading{
@@ -79,7 +78,6 @@ body{
 
 .container{
     flex-direction: column;
-    position: static;
     justify-content: center;
     padding-inline: 4rem;
 }
@@ -87,6 +85,7 @@ body{
 .content{
     width: 100%;
     text-align: center;
+    padding-top: 3rem;
 } 
 
 .main-heading{
@@ -132,12 +131,13 @@ body{
 .main-heading{
     text-align: center;
     padding-left: 0;
+    padding-bottom: 1.5rem;
 }
 
 .container{
     flex-direction: column-reverse;
-    height: 80vh;
-    padding-inline: 2rem;
+    padding-inline: 3rem;
+    position: static;
 }
 
 .content{
@@ -145,9 +145,13 @@ body{
     flex-direction: column-reverse;
     padding-top: 0;
 }
+.name{
+    font-size: 1.8rem;
+}
 
 .bio{
     padding-inline: 0;
+    font-size: 1rem;
 }
 .dots{
     padding-block: 2rem;
@@ -155,6 +159,6 @@ body{
 
 .crew-img{
     padding-inline: 15%;
-    height: 415px;
+    height: 320px;
 }
 }
