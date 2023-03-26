@@ -59,6 +59,10 @@ body{
     padding-right: 0.7rem;
 }
 
+nav ul li span{
+    font-weight: bold;
+}
+
 .hamburger{
     display: none;
 }
@@ -137,6 +141,10 @@ body{
     float: right;
     cursor: pointer;
 
+}
+
+nav ul li{
+    padding-block: 1rem;
 }
 
 
