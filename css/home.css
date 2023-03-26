@@ -1,0 +1,114 @@
+body{
+    background: url(/assets/home/background-home-desktop.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    padding-left: min(16rem,12vw);
+    padding-top: 6rem;
+}
+
+.heading{
+    font-family: var(--second-font);
+    font-size: 10rem;
+    text-transform: uppercase;
+    padding-block: 1.5rem;
+}
+
+.content{
+    width: 60%;
+}
+
+.text-content{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: 2.5px;
+}
+
+.text-content1{
+    padding-right: 5rem;
+    line-height: 2rem;
+}
+
+.explore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family:var(--second-font);
+}
+
+
+/*```````````````TABLET DESIGN````````````````*/
+@media only screen and (max-width : 1000px)  {
+
+body{
+    background: url(/assets/home/background-home-tablet.jpg)no-repeat center;
+    background-size: cover; 
+    text-align: center;
+}
+
+.container{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    padding-inline: 5rem;
+    gap: 7vh;
+    padding-top: 3rem;
+}
+.content{
+    text-align: center;
+    width: 100%;
+}
+
+.heading{
+    padding: 0;
+    font-size: 8rem;
+}
+
+.text-content1{
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+}
+
+
+
+/*```````````````MOBILE DESIGN````````````````*/
+
+@media only screen and (max-width : 600px)  {
+    
+body{
+    background: url(/assets/home/background-home-mobile.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.container{
+    padding-inline: 2rem;
+    padding-top: 2rem;
+}
+.heading{
+    font-size: 5.5rem;
+    padding-block: 0.8rem;
+}
+
+.text-content{
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+.text-content1{
+    font-size: 1.2rem;
+}
+
+}

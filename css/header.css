@@ -13,15 +13,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    letter-spacing: 1.5px;
 }
 
 body{
-    background: url(/assets/home/background-home-desktop.jpg) no-repeat center;
-    background-size: cover;
     color: white;
     height: 100vh;
     font-family: var(--main-font);
-    font-size: 22px;
+    font-size: 20px;
     width: 100vw;
 }
 
@@ -48,8 +47,8 @@ body{
     background: hsl(0 0% 100% / 0.1);
     backdrop-filter: blur(2rem);
     padding-block: 2rem;
-    padding-left: clamp(3rem, 10vw, 10rem);
-    padding-right: clamp(5rem, 15vw, 13rem);
+    padding-left: clamp(3rem, 6vw, 8rem);
+    padding-right: clamp(4rem, 8vw, 10rem);
 }
 .primary-navigation a{
     text-decoration: none;
@@ -74,11 +73,6 @@ body{
 
 @media only screen and (max-width : 1000px)  {
 
-body{
-    background: url(/assets/home/background-home-tablet.jpg)no-repeat center;
-    background-size: cover;
-}
-
 .primary-navigation{
     padding-inline: clamp(2rem, 5vw, 6rem);
 }
@@ -97,11 +91,6 @@ body{
 /*`````````````````MOBILE DESIGN```````````````````*/
 
 @media only screen and (max-width : 600px)  {
-    
-body{
-    background: url(/assets/home/background-home-mobile.jpg) no-repeat center;
-    background-size: cover;
-}
 
 .logo{
     padding: 1.5rem;

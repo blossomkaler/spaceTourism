@@ -1,0 +1,29 @@
+body{
+    background: url(/assets/technology/background-technology-desktop.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+
+/*```````````````TABLET DESIGN````````````````*/
+@media only screen and (max-width : 1000px)  {
+
+body{
+    background: url(/assets/technology/background-technology-tablet.jpg)no-repeat center;
+    background-size: cover;
+}
+
+}
+
+
+
+/*```````````````MOBILE DESIGN````````````````*/
+
+@media only screen and (max-width : 600px)  {
+    
+body{
+    background: url(/assets/technology/background-technology-mobile.jpg) no-repeat center;
+    background-size: cover;
+}
+
+}
