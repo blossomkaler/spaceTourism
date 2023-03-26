@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;1,200;1,300&family=Bellefair&display=swap');
+
+
+:root{
+    --main-color: #0b0d17;
+    --second-color: #d2d8f9;
+    --hover-color: #85868b;
+    --main-font: "Barlow Condensed", sans-serif;
+    --second-font: "Bellefair", serifs;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(/assets/home/background-home-desktop.jpg) no-repeat center;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    font-family: var(--main-font);
+    font-size: 22px;
+    width: 100vw;
+}
+
+.logo{
+    padding: 3.5rem;
+}
+
+.line{
+    height: 0.5px;
+    width: 50vw;
+    background-color: white;
+}
+
+.primary-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.primary-navigation{
+    display: flex;
+    gap: clamp(1.5rem, 5vw, 3rem);
+    list-style: none;
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(2rem);
+    padding-block: 2rem;
+    padding-left: clamp(3rem, 10vw, 10rem);
+    padding-right: clamp(5rem, 15vw, 13rem);
+}
+.primary-navigation a{
+    text-decoration: none;
+    color: white;
+}
+
+.primary-navigation span{
+    padding-right: 0.7rem;
+}
+
+.hamburger{
+    display: none;
+}
+
+.close-menu{
+    display: none;
+}
+
+
+
+/*`````````````````TABLET DESIGN```````````````````*/
+
+@media only screen and (max-width : 1000px)  {
+
+body{
+    background: url(/assets/home/background-home-tablet.jpg)no-repeat center;
+    background-size: cover;
+}
+
+.primary-navigation{
+    padding-inline: clamp(2rem, 5vw, 6rem);
+}
+
+.primary-navigation span{
+    display: none;
+}
+
+.line{
+    display: none;
+}
+    
+}
+
+
+/*`````````````````MOBILE DESIGN```````````````````*/
+
+@media only screen and (max-width : 600px)  {
+    
+body{
+    background: url(/assets/home/background-home-mobile.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.logo{
+    padding: 1.5rem;
+}
+
+.primary-header{
+    align-items: flex-start;
+}
+
+.hamburger{
+    display: block;
+    cursor: pointer;
+    padding: 1.5rem;
+    height: 5rem;
+}
+
+.hamburger.active{
+    display: none;
+}
+
+.primary-navigation  {
+    display: none;
+    flex-direction: column;
+    gap: 5rem;
+    height: 100vh;
+    width: 70vw;
+    padding-left: 12vw;
+    
+}
+
+.primary-navigation.active{
+    display: block;
+}
+
+.primary-navigation span{
+    display: inline;
+}
+
+
+}
