@@ -131,6 +131,9 @@ body{
     padding-left: 12vw;
     
 }
+.primary-navigation li{
+    display: block;
+}
 
 .primary-navigation.active{
     display: block;
@@ -138,6 +141,13 @@ body{
 
 .primary-navigation span{
     display: inline;
+}
+
+.close-menu{
+    display: block;
+    float: right;
+    cursor: pointer;
+
 }
 
 
