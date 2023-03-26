@@ -4,13 +4,136 @@ body{
 }
 
 
+.main-heading{
+    padding: 0.7rem 0 2.5rem 5rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.main-heading span{
+    font-size: 30px;
+    padding-right: 1rem;
+    color: var(--second-color);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: min(5rem, 6vh);
+    gap: 10vw;
+}
+
+.content{
+    width: 45%;
+}
+
+.options{
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.options a{
+    text-decoration: none;
+    padding-right: 1.5rem;  
+    color: white;
+}
+
+.planet{
+    font-family: var(--second-font);
+    font-size: 5rem;
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+    letter-spacing: 0.2rem;
+}
+
+.text-content{
+    line-height: 1.5rem;
+    color: var(--second-color);
+}
+
+.partition{
+    background-color: rgb(125, 124, 124);
+    width: 100%;
+    height: 0.2px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.desc{
+    display: flex;
+    gap: min(5rem, 5vw);
+}
+
+.heading{
+    text-transform: uppercase;
+    font-size: 15px ;
+    color: var(--second-color);
+}
+
+.number{
+    font-family: var(--second-font);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding-top: 0.5rem;
+}
+
+
 
 /*```````````````TABLET DESIGN````````````````*/
 @media only screen and (max-width : 1000px)  {
 
 body{
-    background: url(/assets/destination/background-destination-tablet.jpg)no-repeat center;
+    background: url(/assets/destination/background-destination-tablet.jpg) center;
     background-size: cover;
+}
+
+.main-heading{
+    padding: 0;
+    padding-left: 3rem;
+    font-size: 1.2rem;
+}
+
+.main-heading span{
+    font-size: 1.2rem;
+}
+
+.container{
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    padding-block: 1.5rem;
+}
+
+.container img{
+    height: 13rem;
+}
+
+.planet{
+    padding: 0;
+}
+
+.options{
+    padding-bottom: 1rem;
+}
+
+.content{
+    width: 100%;
+    font-size: 1rem;
+}
+
+.text-content{
+    padding-inline: min(6rem, 8vw);
+}
+
+.desc{
+    justify-content: center;
+    gap: 20vw;
+}
+
+.number{
+    font-size: 1.6rem;
+
 }
 
 }
@@ -22,8 +145,30 @@ body{
 @media only screen and (max-width : 600px)  {
     
 body{
-    background: url(/assets/destination/background-destination-mobile.jpg) no-repeat center;
+    background: url(/assets/destination/background-destination-mobile.jpg) center;
     background-size: cover;
+}
+
+.main-heading{
+    padding: 0;
+    text-align: center;
+}
+
+.container{
+    padding-inline: 1rem;
+}
+
+.container img{
+    height: 10rem;
+}
+
+.planet{
+    font-size: 4rem;
+}
+
+.desc{
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 }
