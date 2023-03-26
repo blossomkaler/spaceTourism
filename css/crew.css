@@ -3,6 +3,70 @@ body{
     background-size: cover;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    padding-inline: min(10rem, 10vw);
+    position: absolute;
+    bottom: 0;
+    height: 65vh;
+}
+
+.main-heading{
+    padding-left: min(10rem, 10vw);
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.main-heading span{
+    font-size: 1.7rem;
+    color: var(--second-color);
+    padding-right: 0.7rem;
+}
+
+.content{
+    padding-top: 6rem;
+}
+
+.role{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    color: var(--second-color);
+    text-transform: uppercase;
+}
+
+.name{
+    font-family: var(--second-font);
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.5rem 0 1rem 0;
+}
+
+.bio{
+    padding-right: 30%;
+    line-height: 1.5rem;
+    color: var(--second-color);
+}
+
+.dots{ 
+    display: flex;
+    gap: 1rem;
+    padding-top: 8vh;
+}
+
+.dot{
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.crew-img{
+    height: 565px;
+}
+
 
 
 /*```````````````TABLET DESIGN````````````````*/
@@ -11,6 +75,46 @@ body{
 body{
     background: url(/assets/crew/background-crew-tablet.jpg)no-repeat center;
     background-size: cover;
+}
+
+.container{
+    flex-direction: column;
+    position: static;
+    justify-content: center;
+    padding-inline: 4rem;
+}
+
+.content{
+    width: 100%;
+    text-align: center;
+} 
+
+.main-heading{
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    margin-left: auto;
+}
+
+.main-heading span{
+    font-size: 1.2rem;
+}
+
+.name{
+    font-size: 2.5rem;
+}
+
+.bio{
+    padding: 0;
+    padding-inline: 3rem;
+}
+
+.crew-img{
+    height: 356px;
+    padding-inline: 25%;
+}
+
+.dots{
+    justify-content: center;
 }
 
 }
@@ -25,5 +129,32 @@ body{
     background: url(/assets/crew/background-crew-mobile.jpg) no-repeat center;
     background-size: cover;
 }
+.main-heading{
+    text-align: center;
+    padding-left: 0;
+}
 
+.container{
+    flex-direction: column-reverse;
+    height: 80vh;
+    padding-inline: 2rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 0;
+}
+
+.bio{
+    padding-inline: 0;
+}
+.dots{
+    padding-block: 2rem;
+}
+
+.crew-img{
+    padding-inline: 15%;
+    height: 415px;
+}
 }
