@@ -3,6 +3,82 @@ body{
     background-size: cover;
 }
 
+.main-heading{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    padding-left: 10vw;
+}
+
+.main-heading span{
+    font-size: 1.7rem;
+    padding-right: 1rem;
+    color: var(--second-color);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10vw;
+}
+
+.circles{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.circle{
+    border: 1px solid white;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: var(--second-font);
+    cursor: pointer;
+}
+
+.bind{
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    padding-left:5vw;
+} 
+
+.heading{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--second-color);
+}
+
+.name{
+    font-family: var(--second-font);
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.text-content{
+    width: 65%;
+    line-height: 1.5rem;
+    color: var(--second-color);
+}
+
+.portrait-img{
+    height: 60%;
+    width: 40%;
+}
+
+.landscape-img{
+    display: none;
+}
+
 
 
 /*```````````````TABLET DESIGN````````````````*/
@@ -13,9 +89,61 @@ body{
     background-size: cover;
 }
 
+.main-heading{
+    padding-left: 3.5rem;
+    font-size: 1.3rem;
+}
+
+.main-heading span {
+    font-size: 1.3rem;
+}
+
+.container{
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+}
+
+.bind{
+    flex-direction: column;
+}
+
+.content{
+    padding: 0;
+}
+
+.name{ 
+    font-size: 2.4rem;
+    padding-block: 0.5rem;
+}
+
+.text-content{
+    width: 100%;
+    padding: 0;
+    padding-inline: 10% ;
+    font-size: 17px;
+}
+
+.circles{
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+.portrait-img{
+    display: none;
+}
+
+.landscape-img{
+    display: block;
+    width: 100vw;
+    height: 310px;
+    padding-block: 2rem;
 }
 
 
+}
 
 /*```````````````MOBILE DESIGN````````````````*/
 
@@ -24,6 +152,37 @@ body{
 body{
     background: url(/assets/technology/background-technology-mobile.jpg) no-repeat center;
     background-size: cover;
+}
+
+.main-heading{
+    padding-left: 1.5rem;
+}
+
+.text-content{
+    padding-inline: 5% ;
+}
+
+.circles{
+    padding-bottom: 1rem;
+}
+
+.circle{ 
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.1rem;
+}
+
+.name{
+    font-size: 2rem;
+}
+
+.text-content{
+    font-size: 15px;
+    line-height: 1.2rem;
+}
+
+.landscape-img{
+    padding-block: 1.2rem;
 }
 
 }
