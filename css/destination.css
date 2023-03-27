@@ -30,13 +30,14 @@ body{
 }
 
 .options{
+    display: flex;
+    gap: 1rem;
     text-transform: uppercase;
     padding-bottom: 0.5rem;
 }
-.options a{
-    text-decoration: none;
-    padding-right: 1.5rem;  
-    color: white;
+
+.moon, .mars, .europa, .titan{
+    cursor: pointer;
 }
 
 .planet{
