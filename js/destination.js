@@ -32,9 +32,6 @@ let destinations = [
     }
   ];
 
-console.log(destinations[1].image);
-
-
 document.addEventListener("click", function(e) {
   const clickedElement = e.target.className ; 
 
