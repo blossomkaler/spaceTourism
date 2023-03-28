@@ -3,6 +3,12 @@ body{
     background-size: cover;
 }
 
+.tech{
+    text-decoration: underline;
+    text-underline-offset: 2rem;
+    text-decoration-thickness: 3px 
+}
+
 .main-heading{
     font-size: 1.7rem;
     text-transform: uppercase;
@@ -26,6 +32,11 @@ body{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+.circle1.active-circle, .circle2.active-circle, .circle3.active-circle{
+    background-color: white;
+    color: black;
 }
 
 .circle1, .circle2, .circle3{
@@ -178,6 +189,10 @@ body{
 
 .landscape-img{
     padding-block: 1.2rem;
+}
+
+.tech{
+    text-decoration: none;
 }
 
 }

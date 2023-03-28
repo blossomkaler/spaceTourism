@@ -21,12 +21,21 @@ let technology= [
 
 
   document.addEventListener("click", function(e) {
-    const clickedElement = e.target.className ; 
+    const target = e.target;
+    const clickedElement = target.classList[0] ; 
+    const circless = document.querySelectorAll('.circles div');
   
     if(clickedElement == 'circle1') n =0;
     else if(clickedElement == 'circle2') n =1;
     else if(clickedElement == 'circle3') n =2;
     else return;
+  
+    circless.forEach(circle => {
+      if(circle.classList.contains('active-circle')) circle.classList.remove('active-circle');
+    });
+   
+    target.classList.add('active-circle');
+  
   
     document.querySelector('.name').innerHTML = technology[n].name;
     document.querySelector('.portrait-img').src = technology[n].portraitImage;

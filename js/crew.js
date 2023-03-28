@@ -27,13 +27,22 @@ let crew = [
 
 
   document.addEventListener("click", function(e) {
-    const clickedElement = e.target.className ; 
+    const target = e.target;
+    const clickedElement = target.classList[0] ; 
+    const dots = document.querySelectorAll('.dots div');
     
     if(clickedElement == 'dot1') n =0;
     else if(clickedElement == 'dot2') n =1;
     else if(clickedElement == 'dot3') n =2;
     else if(clickedElement == 'dot4') n =3;
     else return;
+
+    dots.forEach(dot => {
+      console.log(dot);
+      if(dot.classList.contains('active-dot')) dot.classList.remove('active-dot');
+    });
+
+    target.classList.add('active-dot');
   
     document.querySelector('.name').innerHTML = crew[n].name;
     document.querySelector('.crew-img').src = crew[n].image;
@@ -41,3 +50,28 @@ let crew = [
     document.querySelector('.bio').innerHTML = crew[n].bio;
   
   });
+
+
+/*   document.addEventListener("click", function(e) {
+    const target = e.target;
+    const clickedElement = target.classList[0] ;  
+    const dots = document.querySelectorAll('.dots div'); 
+      
+      if(clickedElement == 'dot1') n =0;
+      else if(clickedElement == 'dot2') n =1;
+      else if(clickedElement == 'dot3') n =2;
+      else if(clickedElement == 'dot4') n =3;
+      else return;
+  
+      dots.forEach(dot => {
+        if(dot.classList.contains('active-dot')) option.classList.remove('active-dot');
+      });
+     
+      target.classList.add('active-dot');
+    
+      document.querySelector('.name').innerHTML = crew[n].name;
+      document.querySelector('.crew-img').src = crew[n].image;
+      document.querySelector('.role').innerHTML = crew[n].role;
+      document.querySelector('.bio').innerHTML = crew[n].bio;
+    
+    }); */

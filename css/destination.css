@@ -3,6 +3,11 @@ body{
     background-size: cover;
 }
 
+.destination{
+    text-decoration: underline;
+    text-underline-offset: 2rem;
+    text-decoration-thickness: 3px 
+}
 
 .main-heading{
     padding: 0.7rem 0 2.5rem 5rem;
@@ -78,6 +83,13 @@ body{
     text-transform: uppercase;
     padding-top: 0.5rem;
 }
+
+.moon.underline, .mars.underline, .europa.underline, .titan.underline{
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+    text-decoration-thickness: 2px 
+}
+
 
 
 
@@ -171,6 +183,10 @@ body{
 .desc{
     flex-direction: column;
     gap: 1.5rem;
+}
+
+.destination{
+    text-decoration: none;
 }
 
 }

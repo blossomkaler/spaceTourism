@@ -3,6 +3,12 @@ body{
     background-size: cover;
 }
 
+.home{
+    text-decoration: underline;
+    text-underline-offset: 2rem;
+    text-decoration-thickness: 3px 
+}
+
 .container{
     display: flex;
     gap: 5rem;
@@ -83,7 +89,6 @@ body{
 }
 
 
-
 /*```````````````MOBILE DESIGN````````````````*/
 
 @media only screen and (max-width : 600px)  {
@@ -113,6 +118,10 @@ body{
 
 .primary-navigation li{
     text-align: left;
+}
+
+.home{
+    text-decoration: none;
 }
 
 }

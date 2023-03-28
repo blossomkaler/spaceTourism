@@ -33,7 +33,9 @@ let destinations = [
   ];
 
 document.addEventListener("click", function(e) {
-  const clickedElement = e.target.className ; 
+  const target = e.target;
+  const clickedElement = target.classList[0] ; 
+  const options = document.querySelectorAll('.options div');
 
   if(clickedElement == 'moon') n =0;
   else if(clickedElement == 'mars') n =1;
@@ -41,14 +43,20 @@ document.addEventListener("click", function(e) {
   else if(clickedElement == 'titan') n =3;
   else return;
 
+  options.forEach(option => {
+    if(option.classList.contains('underline')) option.classList.remove('underline');
+  });
+ 
+  target.classList.add('underline');
+
   document.querySelector('.planet').innerHTML = destinations[n].name;
   document.querySelector('.planet-img').src = destinations[n].image;
   document.querySelector('.text-content').innerHTML = destinations[n].description;
   document.querySelector('.num-1').innerHTML = destinations[n].distance;
   document.querySelector('.num-2').innerHTML = destinations[n].travel;
-  
 
 });
+
 
  
 
