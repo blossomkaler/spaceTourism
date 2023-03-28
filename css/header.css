@@ -154,7 +154,7 @@ nav ul li{
 }
 
 .primary-navigation li :hover {
-    text-decoration: none;
+    border-bottom : none;
     color: rgb(187, 187, 187);
 }
 
