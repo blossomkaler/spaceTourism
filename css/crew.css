@@ -4,9 +4,8 @@ body{
 }
 
 .crew-heading{
-    text-decoration: underline;
-    text-underline-offset: 2rem;
-    text-decoration-thickness: 3px ;
+    border-bottom: 3px solid white ;
+    padding-bottom: 2rem;
 }
 
 .container{
@@ -187,8 +186,9 @@ body{
     background-color: rgb(199, 197, 197);
 }
 
-.crew-heading{
-    text-decoration: none;
+.crew-heading{ 
+    border-bottom :none;
+    padding-bottom: 1rem;
 }
 
 }

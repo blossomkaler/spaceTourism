@@ -46,7 +46,7 @@ body{
     list-style: none;
     background: hsl(0 0% 100% / 0.1);
     backdrop-filter: blur(2rem);
-    padding-block: 2rem;
+    padding-top: 2rem;
     padding-left: clamp(3rem, 6vw, 8rem);
     padding-right: clamp(4rem, 8vw, 10rem);
 }
@@ -69,10 +69,8 @@ body{
 }
 
 .primary-navigation li :hover {
-    text-decoration: underline;
-    text-underline-offset: 2rem;
-    text-decoration-thickness: 3px ;
-    text-decoration-color: grey ;
+    border-bottom: 3px solid grey ;
+    padding-bottom: 2rem;
 }
 
 

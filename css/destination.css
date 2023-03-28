@@ -4,9 +4,8 @@ body{
 }
 
 .destination{
-    text-decoration: underline;
-    text-underline-offset: 2rem;
-    text-decoration-thickness: 3px ;
+    border-bottom: 3px solid white ;
+    padding-bottom: 2rem;
 }
 
 .main-heading{
@@ -192,8 +191,9 @@ body{
     gap: 1.5rem;
 }
 
-.destination{
-    text-decoration: none;
+.destination{ 
+    border-bottom :none;
+    padding-bottom: 1rem;
 }
 
 }
