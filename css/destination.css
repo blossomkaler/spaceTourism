@@ -6,7 +6,7 @@ body{
 .destination{
     text-decoration: underline;
     text-underline-offset: 2rem;
-    text-decoration-thickness: 3px 
+    text-decoration-thickness: 3px ;
 }
 
 .main-heading{
@@ -87,7 +87,14 @@ body{
 .moon.underline, .mars.underline, .europa.underline, .titan.underline{
     text-decoration: underline;
     text-underline-offset: 0.7rem;
-    text-decoration-thickness: 2px 
+    text-decoration-thickness: 2px ;
+}
+
+.options :hover{
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+    text-decoration-thickness: 2px;
+    text-decoration-color: grey;
 }
 
 

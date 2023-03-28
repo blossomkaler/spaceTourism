@@ -6,7 +6,7 @@ body{
 .tech{
     text-decoration: underline;
     text-underline-offset: 2rem;
-    text-decoration-thickness: 3px 
+    text-decoration-thickness: 3px ;
 }
 
 .main-heading{
@@ -40,7 +40,7 @@ body{
 }
 
 .circle1, .circle2, .circle3{
-    border: 1px solid white;
+    border: 1px solid grey;
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
@@ -88,6 +88,10 @@ body{
 
 .landscape-img{
     display: none;
+}
+
+.circles :hover{
+    border-color: white
 }
 
 

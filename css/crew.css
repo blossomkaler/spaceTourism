@@ -6,7 +6,7 @@ body{
 .crew-heading{
     text-decoration: underline;
     text-underline-offset: 2rem;
-    text-decoration-thickness: 3px 
+    text-decoration-thickness: 3px ;
 }
 
 .container{
@@ -66,7 +66,7 @@ body{
     height: 0.8rem;
     width: 0.8rem;
     border-radius: 50%;
-    background-color: var(--hover-color);
+    background-color: rgb(175, 174, 174);
     cursor: pointer;
 }
 
@@ -76,10 +76,13 @@ body{
 
 .dot1.active-dot , .dot2.active-dot, .dot3.active-dot, .dot4.active-dot{
     background-color: white;
-    height: 0.9rem;
-    width: 0.9rem;
+    height: 1rem;
+    width: 1rem;
 }
 
+.dots :hover{
+    background-color: rgb(97, 96, 96);
+}
 
 
 /*```````````````TABLET DESIGN````````````````*/
