@@ -57,9 +57,6 @@ body{
 
 .primary-navigation span{
     margin-right: 0.7rem;
-}
-
-nav ul li span{
     font-weight: bold;
 }
 
@@ -154,5 +151,9 @@ nav ul li{
     padding-block: 1rem;
 }
 
+.primary-navigation li :hover {
+    text-decoration: none;
+    color: rgb(187, 187, 187);
+}
 
 }
